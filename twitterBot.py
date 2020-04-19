@@ -66,7 +66,7 @@ def replace_words(og_tweet):
     return new_tweet
 
 # ignore retweets & check targets tweets for key words, call replace_words and check against own timeline for duplicate tweets
-def totally_real_news():
+def twitter_bot_master():
     now = datetime.datetime.now().isoformat()
     print(f'{now} scanning for tweets...')
     for tweet in target_tweets:
@@ -91,4 +91,4 @@ def totally_real_news():
 
 
 own_tweets()
-totally_real_news()
+twitter_bot_master()
